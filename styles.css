@@ -201,6 +201,10 @@ nav > a {
     font-size: 1.5rem;
 }
 
+.products > a {
+    display: none;
+}
+
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -385,6 +389,19 @@ footer > p {
         padding: 50px 16px;
     }
 
+    nav > a {
+        display: none !important;
+    }
+
+    nav > button {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+    }
+
     .main-menu {
         display: none;
     }
@@ -422,6 +439,14 @@ footer > p {
         padding: 100px 16px;
     }
 
+    .products > a {
+        display: block;
+        width: 100%;
+        background-color: var(--primary);
+        text-align: center;
+        color: white;
+    }
+
     .top {
         flex-direction: column;
         gap: 10px;
@@ -429,6 +454,7 @@ footer > p {
 
     .top a {
         width: 100%;
+        display: none;
     }
 
     .why-choose-us {
