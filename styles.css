@@ -87,10 +87,10 @@ nav > a {
     padding-block: 120px;
     color: white;
     display: grid;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: flex-end;
-    border-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) fill 1;
+    border-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) fill 1;
 }
 
 .hero > div:nth-child(1) {
@@ -104,20 +104,24 @@ nav > a {
 }
 
 .hero span {
-    padding: 4px 16px;
-    border-radius: 100px;
-    border: 1px solid white;
-    font-weight: 300;
     width: fit-content;
 }
 
 .hero h1 {
+    padding: 10px 50px;
+    border-radius: 8px;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    width: fit-content;
+    background-color: var(--primary);
+}
+
+.intro {
+    font-size: 1.5rem;
 }
 
 .hero p {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -149,6 +153,16 @@ nav > a {
     border-radius: 4px;
 }
 
+.why-choose-us {
+    padding: 120px;
+    display: grid;
+    gap: 64px;
+}
+
+.why-choose-us h1 {
+    margin-bottom: 10px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -175,12 +189,6 @@ nav > a {
     font-size: 1.25rem;
 }
 
-.services > a {
-    font-weight: 500;
-    font-size: 0.875rem;
-    color: var(--primary);
-    justify-self: center;
-}
 
 .products {
     padding: 80px 120px;
@@ -219,15 +227,6 @@ nav > a {
     font-weight: 300;
 }
 
-.product-card > a {
-    height: 56px;
-    background-color: var(--primary);
-    color: white;
-    display: grid;
-    place-content: center;
-    border-radius: 4px;
-    font-weight: 500;
-}
 
 .about {
     padding: 120px;
@@ -248,15 +247,20 @@ nav > a {
 .cta {
     padding: 120px;
     display: flex;
-    align-items: center;
+    gap: 100px;
+    align-items: start;
     justify-content: space-between;
     background-color: var(--primary);
+    color: white;
+
 }
+
 
 .cta h2 {
     font-weight: 500;
     font-size: 2rem;
     color: white;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -334,4 +338,125 @@ footer > p {
 }
 
 
+
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 50px 16px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        align-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero > div:nth-child(1) {
+        gap: 20px;
+        /* place-content: center; */
+    }
+
+    .hero > div:nth-child(1) p {
+        font-size: 1rem;
+    }
+
+    .hero > div:nth-child(1) > * {
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero > div:nth-child(2) a {
+        width: auto;
+    }
+
+    .services, .products{
+        padding: 100px 16px;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top a {
+        width: 100%;
+    }
+
+    .why-choose-us {
+        padding: 0px 16px 100px;
+    }
+
+    .why-choose-us > div:nth-child(1) {
+        text-align: center;
+    }
+
+    .cta {
+        padding: 100px 16px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cta a {
+        width: 100%;
+    }
+
+    footer {
+        padding: 100px 16px;
+    }
+
+    footer > div {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .wrapper {
+        padding: 50px;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero > div:nth-child(1) p {
+        font-size: 1.2rem;
+    }
+
+    .services, .products{
+        padding: 50px;
+    }
+
+    .why-choose-us {
+        padding: 50px 50px 100px;
+    }
+
+    .cta {
+        padding: 100px 50px;
+        gap: 250px;
+    }
+
+    .cta a {
+        text-wrap: nowrap;
+        width: 300px;
+        
+    }
+
+    footer {
+        padding: 100px 50px;
+    }
+}
 
