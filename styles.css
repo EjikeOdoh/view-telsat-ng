@@ -69,6 +69,10 @@ nav > a {
     color: var(--text);
 }
 
+.menu-btn {
+    display: none;
+}
+
 
 /* main {
     padding-block: 120px;
@@ -98,9 +102,21 @@ nav > a {
     gap: 10px;
 }
 
+.hero > div:nth-child(1) p {
+    display: none;
+}
+
 .hero > div:nth-child(2) {
     display: grid;
     gap: 24px;
+}
+
+.hero > div:nth-child(2) p {
+    text-align: center;
+}
+
+.hero > div:nth-child(2) a {
+    display: none;
 }
 
 .hero span {
@@ -108,12 +124,10 @@ nav > a {
 }
 
 .hero h1 {
-    padding: 10px 50px;
     border-radius: 8px;
     font-weight: 500;
     font-size: 3rem;
     width: fit-content;
-    background-color: var(--primary);
 }
 
 .intro {
@@ -157,6 +171,7 @@ nav > a {
     padding: 120px;
     display: grid;
     gap: 64px;
+    background-color: #EAFAEA;
 }
 
 .why-choose-us h1 {
@@ -167,12 +182,13 @@ nav > a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 60px;
-
 }
 
 .card {
     display: grid;
     gap: 16px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.212);
+    padding-bottom: 20px;
 }
 
 .card span {
@@ -231,6 +247,12 @@ nav > a {
     font-weight: 300;
 }
 
+.products > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    justify-self: end;
+}
 
 .about {
     padding: 120px;
@@ -347,10 +369,6 @@ footer > p {
         padding: 50px;
     }
 
-    .hero {
-        align-items: center;
-    }
-
     .hero h1 {
         font-size: 2rem;
     }
@@ -363,8 +381,16 @@ footer > p {
         padding: 50px;
     }
 
+    .products > button {
+        justify-self: center;
+    }
+
     .why-choose-us {
         padding: 50px 50px 100px;
+    }
+
+    .about {
+        padding:100px 50px;
     }
 
     .cta {
@@ -402,6 +428,10 @@ footer > p {
         border-radius: 8px;
     }
 
+    .menu-btn {
+        display: block;
+    }
+
     .main-menu {
         display: none;
     }
@@ -433,36 +463,53 @@ footer > p {
 
     .hero > div:nth-child(2) a {
         width: auto;
+        background-color: var(--primary);
+        height: 50px;
+        display: grid;
+        place-content: center;
+        border-radius: 8px;
     }
 
     .services, .products{
         padding: 100px 16px;
     }
 
-    .products > a {
+    .products > button {
         display: block;
-        width: 100%;
-        background-color: var(--primary);
+        width: 50%;
+        height: 50px;
+        border-radius: 8px;
+        background-color: transparent;
         text-align: center;
         color: white;
+        margin: auto;
+        border: none;
+        color: var(--primary);
+        font-size: 1rem;
+        font-weight: 500;
     }
 
     .top {
-        flex-direction: column;
-        gap: 10px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
     }
 
     .top a {
-        width: 100%;
-        display: none;
+      width: fit-content;
+        /* display: none; */
+        justify-self: end;
     }
 
     .why-choose-us {
-        padding: 0px 16px 100px;
+        padding: 100px 16px;
     }
 
     .why-choose-us > div:nth-child(1) {
         text-align: center;
+    }
+
+    .about {
+        padding: 100px 16px;
     }
 
     .cta {
