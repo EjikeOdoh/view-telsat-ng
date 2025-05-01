@@ -21,41 +21,51 @@
 
     <header class="wrapper">
         <nav>
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
             <ul class="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
 
-            <a href="#" class="button">Get Started</a>
+            <a  href="https://wa.me/+2348035066320" class="button">Get Started</a>
 
-            <button class="menu-btn">
+            <button onclick="toggleMenu(event)" class="menu-btn">
                 <span class="material-symbols-outlined">
                     menu
                 </span>
             </button>
+
+            <div class="mobile-menu hidden">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a  href="https://wa.me/+2348035066320" class="button">Get Started</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero wrapper">
+        <section id="home" class="hero wrapper">
             <div>
                 <span> Welcome to </span>
                 <h1>View Telsat NG</h1>
                 <p class="intro">Your One-Stop Solution for Smarter, Safer, and Connected Living</p>
             </div>
             <div>
-                <p>View Telsat NG offers the latest tech to keep your home or business safe, connected, and fun. Enjoy clear TV, fast internet, and smart office solutions—all at a price that works for you. Our friendly team is ready to help!</p>
-                <a href="#">Send us a chat</a>
+                <p>View Telsat NG offers the latest tech to keep your home or business safe, connected, and fun. Enjoy
+                    clear TV, fast internet, and smart office solutions—all at a price that works for you. Our friendly
+                    team is ready to help!</p>
+                <a href="https://wa.me/+2348035066320">Send us a chat</a>
             </div>
         </section>
 
-        <section class="products">
+        <section id="services" class="products">
             <div class="top">
                 <h1>Our Services </h1>
-                <a href="#">Send us a chat</a>
+                <a href="https://wa.me/+2348035066320">Send us a chat</a>
             </div>
 
             <div class="cards">
@@ -98,52 +108,58 @@
                         Band) from trusted providers like Hughes and Starlink. No more buffering or dropped connections!
                     </p>
                 </div>
-                <!-- <div class="product-card">
-                    <div class="product-img"><img src="./images/ac.jpg" alt=""></div>
-                    <h3> Video Distribution for Seamless Viewing</h3>
-                    <p> Share high-quality video (4K, 1080p, 720p) across your home or office with our video
-                        distribution systems. Enjoy movies and presentations anywhere, anytime.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-img"><img src="./images/solar-panel.jpg" alt=""></div>
-                    <h3> Audio Systems for Immersive Sound</h3>
-                    <p> Fill your space with music or announcements using our audio distribution systems from Mirage,
-                        Autonomic, and Ahuja PABX. Perfect for homes, offices, or events.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-img"><img src="./images/tv-set.jpg" alt=""></div>
-                    <h3> Home & Office Automation for Convenience</h3>
-                    <p> Control lights, appliances, and more with our smart automation systems. Make your space work
-                        smarter, saving you time and energy.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-img"><img src="./images/ac.jpg" alt=""></div>
-                    <h3> Inverters & Solar Panels for Reliable Power</h3>
-                    <p> Never worry about power outages with our inverter and solar panel solutions. Go green and keep
-                        your home or business running smoothly.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-img"><img src="./images/solar-panel.jpg" alt=""></div>
-                    <h3> Cable Management for a Clean Look</h3>
-                    <p> Say goodbye to messy wires! We organize coaxial, fiber, and CAT 4, 5, 6, 7 cables for a tidy and
-                        professional setup.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-img"><img src="./images/tv-set.jpg" alt=""></div>
-                    <h3> Remote Surveillance for Control Anywhere</h3>
-                    <p> Check on your property from your phone or laptop with our remote surveillance technology. Stay
-                        in the know, no matter where you are.</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-img"><img src="./images/solar-panel.jpg" alt=""></div>
-                    <h3>Burglary Alarms for Extra Security</h3>
-                    <p> Protect your home or office with our advanced alarm systems. Get instant alerts to keep your
-                        property and loved ones safe.</p>
-                </div> -->
+                <div class="more-products hide-products">
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/ac.jpg" alt=""></div>
+                        <h3> Video Distribution for Seamless Viewing</h3>
+                        <p> Share high-quality video (4K, 1080p, 720p) across your home or office with our video
+                            distribution systems. Enjoy movies and presentations anywhere, anytime.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/solar-panel.jpg" alt=""></div>
+                        <h3> Audio Systems for Immersive Sound</h3>
+                        <p> Fill your space with music or announcements using our audio distribution systems from
+                            Mirage,
+                            Autonomic, and Ahuja PABX. Perfect for homes, offices, or events.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/tv-set.jpg" alt=""></div>
+                        <h3> Home & Office Automation for Convenience</h3>
+                        <p> Control lights, appliances, and more with our smart automation systems. Make your space work
+                            smarter, saving you time and energy.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/ac.jpg" alt=""></div>
+                        <h3> Inverters & Solar Panels for Reliable Power</h3>
+                        <p> Never worry about power outages with our inverter and solar panel solutions. Go green and
+                            keep
+                            your home or business running smoothly.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/solar-panel.jpg" alt=""></div>
+                        <h3> Cable Management for a Clean Look</h3>
+                        <p> Say goodbye to messy wires! We organize coaxial, fiber, and CAT 4, 5, 6, 7 cables for a tidy
+                            and
+                            professional setup.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/tv-set.jpg" alt=""></div>
+                        <h3> Remote Surveillance for Control Anywhere</h3>
+                        <p> Check on your property from your phone or laptop with our remote surveillance technology.
+                            Stay
+                            in the know, no matter where you are.</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="./images/solar-panel.jpg" alt=""></div>
+                        <h3>Burglary Alarms for Extra Security</h3>
+                        <p> Protect your home or office with our advanced alarm systems. Get instant alerts to keep your
+                            property and loved ones safe.</p>
+                    </div>
 
+                </div>
             </div>
 
-            <button href="#">View more</button>
+            <button onclick="toggleProducts()">Show more</button>
         </section>
 
         <section class="why-choose-us">
@@ -202,12 +218,26 @@
             </div>
         </section>
 
-        
-        <section class="about">
-            
+
+        <section id="about" class="about">
+
             <h1>About View Telsat NG</h1>
             <p>
-                At View Telsat NG, we believe technology should make your life easier, safer, and more enjoyable. That’s why we’ve made it our mission to deliver top-notch solutions for homes and businesses across Nigeria. From crystal-clear satellite TV to smart home automation and reliable security systems, we’re here to help you stay connected, protected, and entertained.Founded with a passion for innovation, we bring years of expertise to every project, whether it’s installing a CCTV system for your shop, setting up high-speed internet for your home, or automating your office for maximum efficiency. We partner with trusted global brands like DSTV, Hikvision, Cisco, and Starlink to ensure you get quality that lasts.What sets us apart? It’s our commitment to you. We listen to your needs, offer solutions that fit your budget, and provide friendly support every step of the way. At View Telsat NG, we’re not just about technology—we’re about creating spaces where you feel secure, connected, and in control.Ready to experience the difference? Let’s work together to transform your home or business today!
+                At View Telsat NG, we believe technology should make your life easier, safer, and more enjoyable. That’s
+                why we’ve made it our mission to deliver top-notch solutions for homes and businesses across Nigeria.
+            </p>
+            <p>
+                From crystal-clear satellite TV to smart home automation and reliable security systems, we’re here to
+                help you stay connected, protected, and entertained.Founded with a passion for innovation, we bring
+                years of expertise to every project, whether it’s installing a CCTV system for your shop, setting up
+                high-speed internet for your home, or automating your office for maximum efficiency. We partner with
+                trusted global brands like DSTV, Hikvision, Cisco, and Starlink to ensure you get quality that
+                lasts.</p>
+                
+                <p>What sets us apart?<br> It’s our commitment to you. We listen to your needs, offer solutions that fit
+                your budget, and provide friendly support every step of the way. At View Telsat NG, we’re not just about
+                technology—we’re about creating spaces where you feel secure, connected, and in control.Ready to
+                experience the difference? Let’s work together to transform your home or business today!
             </p>
         </section>
 
@@ -218,7 +248,7 @@
                     talk about what you need or get a free quote.</p>
             </div>
 
-            <a href="Send us a chat" class="button">Send us a chat</a>
+            <a  href="https://wa.me/+2348035066320"class="button">Send us a chat</a>
         </section>
     </main>
 
@@ -226,24 +256,28 @@
         <div>
             <div class="footer-logo">
                 <h1>Logo</h1>
-                <p>Auto gives you the best services in automation</p>
+                <p>Your One-Stop Solution for Smarter, Safer, and Connected Living</p>
                 <div class="sm-icons">
-                    <a>
-                        x
+                    <a  href="https://wa.me/+2348035066320">
+                        <img src="./icons/whatsapp.svg">
                     </a>
-                    <a>in</a>
-                    <a>fb</a>
-                    <a>yt</a>
+                    <a>
+                        <img src="./icons/facebook.svg">
+                    </a>
+                    <a>
+                        <img src="./icons/instagram.svg">
+                    </a>
+                    <a>
+                        <img src="./icons/x.svg">
+                    </a>
                 </div>
             </div>
 
             <div class="footer-items">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </div>
 
@@ -258,6 +292,7 @@
         </div>
         <p>Copyright &copy; 2025 Auto. All Rights Reserved</p>
     </footer>
+    <script src="./script.js"></script>
 
 </body>
 
