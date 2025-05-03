@@ -4,6 +4,11 @@ const mobileMenu = document.querySelector('.mobile-menu')
 const menuLinks = document.querySelectorAll('.mobile-menu a')
 const menuBtnText = document.querySelector('.menu-btn span')
 const productsContainer = document.querySelector('.more-products')
+const yearContainer = document.getElementById('year')
+
+const currentYear = new Date().getFullYear()
+
+yearContainer.textContent = currentYear
 
 const productsBtn = document.querySelector('.products > button')
 
