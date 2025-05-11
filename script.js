@@ -2,7 +2,7 @@
 
 const mobileMenu = document.querySelector('.mobile-menu')
 const menuLinks = document.querySelectorAll('.mobile-menu a')
-const menuBtnText = document.querySelector('.menu-btn span')
+const menuBtn = document.querySelector('.menu-btn')
 const productsContainer = document.querySelector('.more-products')
 const yearContainer = document.getElementById('year')
 
@@ -17,12 +17,12 @@ function toggleMenu(e) {
     const isHidden = mobileMenu.classList.contains('hidden')
     if (isHidden) {
         mobileMenu.classList.remove('hidden')
-        menuBtnText.textContent = 'close'
+        menuBtn.innerHTML = `<img src="./icons/close.svg">`
 
     } else {
         mobileMenu.classList.add('hidden')
-        menuBtnText.textContent = 'menu'
-    }
+        menuBtn.innerHTML = `<img src="./icons/menu.svg">`
+        }
 }
 
 menuLinks.forEach(link => {
