@@ -22,7 +22,7 @@ function toggleMenu(e) {
     } else {
         mobileMenu.classList.add('hidden')
         menuBtn.innerHTML = `<img src="./icons/menu.svg">`
-        }
+    }
 }
 
 menuLinks.forEach(link => {
@@ -31,10 +31,10 @@ menuLinks.forEach(link => {
     })
 })
 
-window.addEventListener('click', (e)=>{
+window.addEventListener('click', (e) => {
     if (!e.target.matches('div.mobile-menu, header')) {
         mobileMenu.classList.add('hidden')
-        menuBtnText.textContent = 'menu'
+        menuBtn.innerHTML = `<img src="./icons/menu.svg">`
     }
 })
 
@@ -42,7 +42,7 @@ function toggleProducts() {
     const isHidden = productsContainer.classList.contains('hide-products')
     if (isHidden) {
         productsContainer.classList.remove('hide-products')
-        productsBtn.textContent =  `Show less`
+        productsBtn.textContent = `Show less`
     } else {
         productsContainer.classList.add('hide-products')
         productsBtn.textContent = `Show more`
